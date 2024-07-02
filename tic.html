@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(15, 143, 105);
+            text-align: center;
+        }
+
+        .container {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .game {
+            height: 270px;
+            width: 300px;
+            gap: 5px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .box {
+            height: 90px;
+            width: 90px;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+            font-size: 4rem;
+            color: brown;
+            background-color: bisque;
+        }
+
+        #reset {
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: bolder;
+            border: 3px solid black;
+            border-radius: 5px;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        #new-btn {
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: bolder;
+            border: 3px solid black;
+            border-radius: 5px;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+            position: relative;
+            top: 12px;
+        }
+
+        #msg {
+            color: blanchedalmond;
+            font-size: larger;
+        }
+
+        .msg {
+            height: 25px;
+            position: relative;
+            top: 20px;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <div class="msg hide">
+            <p id="msg">Winner</p>
+            <button id="new-btn">New Game</button>
+        </div>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset">reset game</button>
+    </main>
+    <script src="tac.js"></script>
+</body>
+
+</html>
